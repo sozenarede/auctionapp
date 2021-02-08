@@ -117,6 +117,8 @@ public class AuctionController {
         }
 
         result = new Result(name, min, profit);
+        bids.clear();
+        invalidValues.clear();
         return new ResponseEntity<>("ACCEPTED", HttpStatus.ACCEPTED);
     }
 
